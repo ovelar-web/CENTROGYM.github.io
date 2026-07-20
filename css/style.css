@@ -385,9 +385,6 @@ header{
 }
 /*---------------------Responsive para Banner---------------------*/
 @media(max-width: 700px){
-    .div-banner{
-        height: 280px;
-    }
     .div-imagen img{
         width: 125%;
         height: 100%;
@@ -397,12 +394,12 @@ header{
         margin-left: -40px;
     }
     .div-titulo h2{
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-top: 1.6rem;
         text-shadow: 0 3px 1px rgb(0, 0, 0);
     }
     .div-titulo h1{
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-top: 0.7rem;
         text-shadow: 0 3px 1px rgb(0, 0, 0);
     }
