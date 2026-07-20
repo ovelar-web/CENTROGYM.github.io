@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Centro GYM</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-logo">
+            <a href="index.html">
+                <img src="img/Logo.png" alt="">
+                <p>CENTRO GYM</p>
+            </a>
+        </nav>
+        <nav class="nav-enlaces">
+            <a href="#" class="activo">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#noticias">Noticias</a>
+            <a href="#preguntas" class="enlace-largo">Preguntas frecuentes</a>
+            <a href="#preguntas" class="enlace-corto">Preguntas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <nav class="nav-whatsapp">
+            <a href="https://wa.me/595986666768" target="_blank">
+                <img src="img/whatsapp.png" alt="">
+            </a>
+        </nav>
+        <nav class="nav-modo">
+            <button onclick="cambiarModo()">
+                <img src="img/oscuro.png" alt="" id="modo-claro-oscuro">
+            </button>
+        </nav>
+    </header>
+    <main>
+        <div class="div-llamada" onclick="mostrarModalLlamada()">
+            <img src="img/telefono.png" alt="Llamar">
+        </div>
+        <div id="div-modal-llamada" class="div-modal-llamada">
+            <div class="modal-llamada">
+                <h2>LLAMADA TELEFÓNICA</h2>
+                <span onclick="cerrarModalLlamada()">&times;</span>
+                <p>+595 986 666768</p>
+                <a href="tel:+595986666768">Llamar</a>
+            </div>
+        </div>
+        <div class="div-boton-arriba" id="arriba" onclick="irArriba()">
+            <img src="img/arriba.png" alt="" >
+        </div>
+        <section id="inicio">
+            <div class="div-banner">
+                <div class="div-imagen">
+                    <img src="img/Banner.png" alt="">
+                </div>
+                <div class="div-titulo">
+                    <h2>CENTRO GYM</h2>
+                    <h1>LA FÁBRICA DE CUERPOS</h1>
+                </div>
+            </div>
+        </section>
+        <section id="nosotros">
+            <div class="div-titulo-nosotros">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>
+                    Nuestro gimnasio cuenta con <span>modernos equipamientos</span> de musculación, 
+                    cardio y funcional dentro de un ambiente innovador y agradable.
+                </p>
+            </div>
+            <div class="div-nosotros">
+                <div class="div-historia">
+                    <h3>HISTORIA</h3>
+                    <p>
+                        CENTRO GYM nació en 2025 como un pequeño espacio creado por un grupo de amigos 
+                        apasionados por el deporte y la vida saludable. Lo que comenzó con unas pocas 
+                        máquinas y mucha motivación, pronto se transformó en un punto de encuentro para 
+                        jóvenes, adultos y familias que buscaban mejorar su bienestar físico y mental.
+                    </p>
+                </div>
+                <div class="div-mision">
+                    <h3>MISIÓN</h3>
+                    <p>
+                        Brindar a la comunidad un espacio moderno y accesible para el entrenamiento 
+                        físico, promoviendo hábitos saludables y ofreciendo programas adaptados a las 
+                        necesidades de cada persona, en un ambiente de motivación y compañerismo.
+                    </p>
+                </div>
+                <div class="div-vision">
+                    <h3>VISIÓN</h3>
+                    <p>
+                        Consolidarse como el gimnasio líder en Arroyos y Esteros, reconocido por su 
+                        innovación, calidad en el servicio y compromiso con el bienestar integral de sus 
+                        socios, expandiendo su influencia como referente en salud y fitness en la región.
+                    </p>
+                </div>
+                <div class="div-valores">
+                    <h3>VALORES</h3>
+                    <p><span>Disciplina:</span> fomentar la constancia y el esfuerzo personal.</p>
+                    <p><span>Innovación:</span> incorporar equipamientos y métodos de entrenamiento modernos.</p>
+                    <p><span>Salud</span>: priorizar el bienestar físico y mental de cada socio.</p>
+                    <p><span>Compromiso:</span> ofrecer siempre un servicio profesional y de calidad.</p>
+                </div>
+            </div>
+            <h3 class="titulo-instalaciones">NUESTRAS INSTALACIONES</h3>
+            <div class="div-instalaciones">
+                <div class="div-instalaciones-imagenes">
+                    <img src="img/imgGrande.png" alt="">
+                    <img src="img/img1.jpg" alt="">
+                    <img src="img/img2.jpg" alt="">
+                    <img src="img/img3.jpg" alt="">
+                    <img src="img/img4.jpg" alt="">
+                    <img src="img/img5.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="servicios">
+            <div class="div-texto-servicios">
+                <h2>SERVICIOS</h2>
+                <p>
+                    En CENTRO GYM ofrecemos <span>planes adaptados a sus objetivos</span>, en un espacio 
+                    pensado  para que cada persona pueda entrenar en un ambiente moderno, seguro y 
+                    motivador.
+                </p>
+            </div>
+            <div class="div-servicios">
+                <div class="div-servicios-programas">
+                    <div class="div-servicio" data-servicio="cardio">
+                        <div class="div-imagen-servicio">
+                            <img src="img/cardio.png" alt="" class="img-servicio">
+                        </div>
+                        <div class="div-descripcion-servicio">
+                            <h3>CARDIO</h3>
+                            <p>
+                                Aumenta la resistencia, mejora la circulación, fortalece el corazón y 
+                                ayuda a regular la presión arterial y el colesterol.
+                            </p>
+                        </div>
+                        <div class="div-boton-servicio">
+                            <button>Ver más</button>
+                        </div>
+                    </div>
+                    <div class="div-servicio" data-servicio="musculacion">
+                        <div class="div-imagen-servicio">
+                            <img src="img/culturismo.png" alt="" class="img-servicio">
+                        </div>
+                        <div class="div-descripcion-servicio">
+                            <h3>MUSCULACIÓN</h3>
+                            <p>
+                                Busca aumentar el tamaño de las fibras musculares mediante la 
+                                hipertrofia. Esto se logra a través de rutinas repetitivas divididas 
+                                en series y ejercicios específicos.
+                            </p>
+                        </div>
+                        <div class="div-boton-servicio">
+                            <button>Ver más</button>
+                        </div>
+                    </div>
+                    <div class="div-servicio" data-servicio="funcional">
+                        <div class="div-imagen-servicio">
+                            <img src="img/funcional.png" alt="" class="img-servicio">
+                        </div>
+                        <div class="div-descripcion-servicio">
+                            <h3>FUNCIONAL</h3>
+                            <p>
+                                Es una metodología que mejora la fuerza, coordinación, equilibrio y 
+                                movilidad mediante movimientos que imitan acciones de la vida diaria o 
+                                deportivas.
+                            </p>
+                        </div>
+                        <div class="div-boton-servicio">
+                            <button>Ver más</button>
+                        </div>
+                    </div>
+                    <div class="div-servicio" data-servicio="fitDance">
+                        <div class="div-imagen-servicio">
+                            <img src="img/dance.png" alt="" class="img-servicio">
+                        </div>
+                        <div class="div-descripcion-servicio">
+                            <h3>FIT DANCE</h3>
+                            <p>
+                                Ejercicio que combina movimientos de danza con ejercicios de fitness, 
+                                creando una experiencia dinámica y motivadora. Se caracteriza por su 
+                                enfoque en la diversión y la quema de calorías.
+                            </p>
+                        </div>
+                        <div class="div-boton-servicio">
+                            <button>Ver más</button>
+                        </div>
+                    </div>
+                    <div class="div-servicio" data-servicio="hiit">
+                        <div class="div-imagen-servicio">
+                            <img src="img/hiit.png" alt="" class="img-servicio">
+                        </div>
+                        <div class="div-descripcion-servicio">
+                            <h3>HIIT</h3>
+                            <p>
+                                Método de entrenamiento basado en intervalos de esfuerzo máximo 
+                                durante periodos breves, seguidos de descansos activos o pasivos.
+                            </p>
+                        </div>
+                        <div class="div-boton-servicio">
+                            <button>Ver más</button>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="titulo-infraestructura">EN INFRAESTRUCTURA</h2>
+                <div class="div-servicios-infraestructura">
+                    <div class="div-servicio" data-servicio="maquinas">
+                        <div class="div-imagen-infraestructura">
+                            <img src="img/infra1.webp" alt="" class="img-infraestructura">
+                        </div>
+                        <div class="div-descripcion-infraestructura">
+                            <h3>EQUIPAMIENTOS MODERNOS</h3>
+                            <p>
+                                En CENTRO GYM contamos con instalaciones modernas y seguras, diseñadas 
+                                para ofrecer comodidad y eficiencia en cada entrenamiento.
+                            </p>
+                        </div>
+                        <div class="div-boton-servicio">
+                            <button>Ver más</button>
+                        </div>
+                    </div>
+                    <div class="div-servicio" data-servicio="coach">
+                        <div class="div-imagen-infraestructura">
+                            <img src="img/infra2.avif" alt="" class="img-infraestructura">
+                        </div>
+                        <div class="div-descripcion-infraestructura">
+                            <h3>PERSONALES CAPACITADOS</h3>
+                            <p>
+                                Contamos con un equipo de profesionales altamente preparados, 
+                                dedicados a guiar y acompañar cada entrenamiento de manera segura 
+                                y efectiva.
+                            </p>
+                        </div>
+                        <div class="div-boton-servicio">
+                            <button>Ver más</button>
+                        </div>
+                    </div>
+                    <div class="div-servicio" data-servicio="sanitarios">
+                        <div class="div-imagen-infraestructura">
+                            <img src="img/infra3.jpg" alt="" class="img-infraestructura">
+                        </div>
+                        <div class="div-descripcion-infraestructura">
+                            <h3>SANITARIOS MODERNOS</h3>
+                            <p>
+                                Ofrecemos sanitarios amplios, higiénicos y equipados con instalaciones 
+                                modernas que garantizan comodidad y seguridad para todos los clientes.
+                            </p>
+                        </div>
+                        <div class="div-boton-servicio">
+                            <button>Ver más</button>
+                        </div>
+                    </div>
+                    <div class="div-servicio" data-servicio="estacionamiento">
+                        <div class="div-imagen-infraestructura">
+                            <img src="img/infra4.jpeg" alt="" class="img-infraestructura">
+                        </div>
+                        <div class="div-descripcion-infraestructura">
+                            <h3>ESTACIONAMIENTO AMPLIO</h3>
+                            <p>
+                                Estacionamiento cómodo y seguro, pensado para que los clientes puedan 
+                                acceder con tranquilidad y facilidad a nuestras instalaciones.
+                            </p>
+                        </div>
+                        <div class="div-boton-servicio">
+                            <button>Ver más</button>
+                        </div>
+                    </div>
+                    <div class="div-servicio" data-servicio="cantina">
+                        <div class="div-imagen-infraestructura">
+                            <img src="img/cantina.jpg" alt="" class="img-infraestructura">
+                        </div>
+                        <div class="div-descripcion-infraestructura">
+                            <h3>ESPACIO GASTRONÓMICO</h3>
+                            <p>
+                                Un espacio para disfrutar de opciones saludables y refrescantes 
+                                en un ambiente moderno. También encuentras suplementos deportivos 
+                                que acompañan tu entrenamiento.
+                            </p>
+                        </div>
+                        <div class="div-boton-servicio">
+                            <button>Ver más</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="div-modal-servicio" class="div-modal-servicio">
+                    <div class="modal-servicio">
+                        <h1>En CENTRO GYM abrimos de Lunes a Sabados desde las 06:00 hasta las 23:00</h1>
+                        <div class="div-descripcion-modal">
+                            <h2>Horarios con profesional</h2>
+                            <p id="tipo"></p>
+                            <p id="dias"></p>
+                            <p id="horarios"></p>
+                            <div class="div-boton-modal-servicio">
+                                <button id="boton-modal-servicio">Aceptar</button>
+                            </div>
+                        </div>
+                        <span id="cerrar-modal-servicio">&times;</span>
+                    </div>
+                </div>
+                <div id="div-modal-infraestructura" class="div-modal-servicio">
+                    <div class="modal-infraestructura">
+                        <h1>En CENTRO GYM encuentras</h1>
+                        <div class="caja-descripcion-infra">
+                            <div class="div-img-modal-infra">
+                                <img src="" alt="" id="img-modal-infraestructura">
+                            </div>
+                            <h2 id="titulo-modal-infra"></h2>
+                            <p id="descripcion-modal-infra"></p>
+                            <span id="cerrar-modal-infra">&times;</span>
+                            <div class="div-boton-modal-infra">
+                                <button id="boton-modal-infra">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="noticias">
+            <div class="div-titulo-novedades">
+                <h2>NOVEDADES</h2>
+                <p>
+                    Compartimos <span>actualizaciones</span> sobre nuevas clases, promociones exclusivas, mejoras 
+                    en nuestras instalaciones y todo lo que forma parte del crecimiento de nuestra 
+                    <span>comunidad fitness</span>.
+                </p>
+            </div>
+            <div class="carrucel">
+                <div class="div-galeria">
+                    <img src="img/galery1.webp" alt="">
+                    <div class="div-descripcion-galeria">
+                        <h2>Proximamente!!!</h2>
+                        <p>Más equipamientos para mejor comodidad</p>
+                    </div>
+                </div>
+                <div class="div-galeria">
+                    <img src="img/img5.png" alt="">
+                    <div class="div-descripcion-galeria">
+                        <h2>Promoción!!!</h2>
+                        <p>30% OFF del 1 al 10 de cada mes</p>
+                    </div>
+                </div>
+                <div class="div-galeria">
+                    <img src="img/galery2.jfif" alt="">
+                    <div class="div-descripcion-galeria">
+                        <h2>También contamos con...</h2>
+                        <p>Espacio específico para funcional y core</p>
+                    </div>
+                </div>
+                <div class="div-galeria">
+                    <img src="img/galery3.jpg" alt="">
+                    <div class="div-descripcion-galeria">
+                        <h2>Alimentación adecuada</h2>
+                        <p>Que acompañan cada entrenamiento</p>
+                    </div>
+                </div>
+                <div class="div-galeria">
+                    <img src="img/galery4.jpg" alt="">
+                    <div class="div-descripcion-galeria">
+                        <h2>Equipo de profesionales</h2>
+                        <p>Guiándote paso a paso</p>
+                    </div>
+                </div>
+                <div class="div-boton-carrucel">
+                    <button class="btn-izquierda">
+                        <img src="img/izquierdo.png" alt="">
+                    </button>
+                    <button class="btn-derecha">
+                        <img src="img/derecha.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="preguntas">
+            <div class="div-preguntas-clientes">
+                <div class="div-preguntas">
+                    <h2>Preguntas Frecuentes</h2>
+                    <details>
+                        <summary>
+                            <div class="div-icono">
+                                <img src="img/repetir.png" alt="">
+                            </div>
+                            ¿Qué planes de membresía se ofrece?
+                        </summary>
+                        <p>
+                            Contamos con planes semanales, mensuales y trimestrales adaptados a cada 
+                            necesidad.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            <div class="div-icono">
+                                <img src="img/plan (1).png" alt="">
+                            </div>
+                            ¿El gimnasio incluye asesoramiento nutricional?
+                        </summary>
+                        <p>
+                            Sí, ofrecemos orientación nutricional para complementar tu entrenamiento.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            <div class="div-icono">
+                                <img src="img/maquina-de-gimnasio.png" alt="">
+                            </div>
+                            ¿Qué tipo de equipamiento se tiene?
+                        </summary>
+                        <p>
+                            Disponemos de máquinas modernas de musculación, cardio y funcional.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            <div class="div-icono">
+                                <img src="img/hombre.png" alt="">
+                            </div>
+                            ¿Hay instructores disponibles en todo momento?
+                        </summary>
+                        <p>
+                            Un equipo de profesionales capacitados acompaña a los clientes durante sus 
+                            rutinas.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            <div class="div-icono">
+                                <img src="img/estacionamiento.png" alt="">
+                            </div>
+                            ¿El gimnasio cuenta con estacionamiento?
+                        </summary>
+                        <p>
+                            Sí, ofrecemos estacionamiento amplio, seguro y cómodo para nuestros clientes.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            <div class="div-icono">
+                                <img src="img/grupo.png" alt="">
+                            </div>
+                            ¿Tienen clases grupales?
+                        </summary>
+                        <p>
+                            Ofrecemos clases de GAP, Bike, funcional y más, según la programación 
+                            semanal.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            <div class="div-icono">
+                                <img src="img/alimento.png" alt="">
+                            </div>
+                            ¿Hay opciones gastronómicas dentro del gimnasio?
+                        </summary>
+                        <p>
+                            Disponemos de cantina con opciones saludables y energéticas.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            <div class="div-icono">
+                                <img src="img/principiante.png" alt="">
+                            </div>
+                            ¿El ambiente es apto para principiantes?
+                        </summary>
+                        <p>
+                            Claro, contamos con rutinas adaptadas para todos los niveles.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            <div class="div-icono">
+                                <img src="img/promocion.png" alt="">
+                            </div>
+                            ¿Ofrecen promociones o descuentos?
+                        </summary>
+                        <p>
+                            Tenemos beneficios especiales en inscripciones y renovaciones.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            <div class="div-icono">
+                                <img src="img/higiene.png" alt="">
+                            </div>
+                            ¿Qué medidas de seguridad e higiene se aplica?
+                        </summary>
+                        <p>
+                            Mantenemos protocolos de limpieza y seguridad para garantizar el bienestar 
+                            de todos.
+                        </p>
+                    </details>
+                </div>
+                <div class="div-clientes">
+                    <h2>TESTIMONIOS DE NUESTROS CLIENTES</h2>
+                    <div class="div-imagen-clientes">
+                        <img src="img/ChatGPT Image 14 jul 2026, 07_46_52 p.m..png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <div class="div-titulo-contacto">
+                <h2>CONTACTANOS</h2>
+                <p>
+                    Estamos siempre disponibles para <span>resolver tus dudas</span>, brindarte 
+                    información sobre nuestras clases y promociones, y <span>acompañarte en cada 
+                    paso</span> tu experiencia fitness.
+                </p>
+            </div>
+            <div class="div-mapa-contacto">
+                <div class="div-mapa">
+                    <img src="img/ChatGPT Image 14 jul 2026, 08_17_35 p.m..png" alt="">
+                </div>
+                <div class="div-contacto">
+                    <form id="formCorreo">
+                        <div class="nombre">
+                            <label class="nombreUsuario">Nombre (no se permite números ni caracteres especiales):</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" maxlength="30" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{1,30}" required>
+                        </div>
+                        <div class="apellido">
+                            <label class="apellidoUsuario">Apellido (no se permite números ni caracteres especiales):</label>
+                            <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" maxlength="30" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{1,30}" required>
+                        </div>
+                        <div class="telefono">
+                            <label class="telefonoUsuario">Teléfono(solo números):</label>
+                            <input type="tel" name="telefono" id="telefono" placeholder="Ej: 0981123456" maxlength="15" pattern="[0-9]{8,15}" required>
+                        </div>
+                        <div class="correo">
+                            <label class="correoUsuario">Correo:</label>
+                            <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electrónico" pattern="^[a-zA-Z0-9]+@(gmail\.com|hotmail\.com|icloud\.com)$" required>
+                        </div>
+                        <div class="grupo-combo">
+                            <label class="titulo-combo">Seleccione una opción:</label>
+                            <br>
+                            <select id="opciones" class="opciones-combo" required>
+                                <option value="">Elije una opción</option>
+                                <option value="inscribirse">Quiero inscribirme</option>
+                                <option value="informacion">Quiero más información</option>
+                                <option value="libre">Realizar una pregunta</option>
+                            </select>
+                        </div>
+                        <div class="mensaje">
+                            <label class="mensajeUsuario">Puedes agregar Consultas, Quejas o Sugerencias:</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu consulta, queja o sugerencia" required></textarea>
+                        </div>
+                        <div class="enviar">
+                            <input type="submit" id="button" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="div-footer">
+            <div class="div-ubicacion">
+                <img src="img/marcador-de-posicion.png" alt="">
+                <p>Calle 4 de octubre e/ 12 de junio</p>
+                <p>Arroyos y Esteros, Paraguay</p>
+            </div>
+            <div class="div-enlaces">
+                <h4>Acceso Rápido</h4>
+                <div class="enlaces">
+                    <a href="#">Inicio</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#noticias">Noticias</a>
+                    <a href="#preguntas">Preguntas frecuentes</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
+            <div class="div-enlaces">
+                <h4>Servicios</h4>
+                <div class="enlaces">
+                    <a href="#contacto">Centro de Ayuda</a>
+                    <a href="#servicios">Entrenadores</a>
+                    <a href="#servicios">Programa de Ejercicios</a>
+                    <a href="#nosotros">Intalaciones</a>
+                    <a href="#preguntas">Testimonios de clientes</a>
+                </div>
+            </div>
+            <div class="div-enlaces">
+                <h4>Redes Sociales</h4>
+                <div class="enlaces">
+                    <a href="#">
+                        <img src="img/instagram (1).png" alt="">
+                        <p>Instagram</p>
+                    </a>
+                    <a href="#">
+                        <img src="img/facebook (1).png" alt="">
+                        <p>Facebook</p>
+                    </a>
+                    <a href="#">
+                        <img src="img/tik-tok (1).png" alt="">
+                        <p>TikTok</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="div-footer-pie">
+            <p>Copyright © 2026</p>
+            <div class="footer-pie-links">
+                <a href="#">Términos y Condiciones</a>
+                <a href="#">Políticas de Privacidad</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('fOfb1GaZisa-SidAm')</script>
+</body>
+</html>
