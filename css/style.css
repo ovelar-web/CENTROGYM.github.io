@@ -996,8 +996,8 @@ section{
         padding: 0.5rem 1rem;
     }
     .carrucel{
-        width: 90%;
-        height: 255px;
+        width: 95%;
+        height: 260px;
     }
     .div-descripcion-galeria h2{
         font-size: 1.2rem;
@@ -1005,7 +1005,7 @@ section{
         margin-top: 45%;
     }
     .div-descripcion-galeria p{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         letter-spacing: 0;
     }
 }
@@ -1113,6 +1113,25 @@ details[open] summary::after{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .div-preguntas{
+        width: 95%;
+        padding-left: 0;
+    }
+    .div-preguntas h2{
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+    .div-clientes{
+        width: 95%;
+    }
+    .div-clientes h2{
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+    }
+    .div-imagen-clientes{
+        padding: 0 0.5rem;
     }
 }
 /*-------------------------Seccion contacto-------------------------*/
