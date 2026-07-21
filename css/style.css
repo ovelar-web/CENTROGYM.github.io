@@ -1391,8 +1391,25 @@ hr{
         padding: 5px;
     }
     .div-footer{
-        gap: 2rem;
+        padding-left: 1rem;
+        padding-right: 0;
+        gap: 1rem;
         margin-top: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "enlace1 enlace2 enlace3"
+            "ubicacion ubicacion ubicacion";
+    }
+    .div-enlaces:nth-of-type(1){ grid-area: enlace1; }
+    .div-enlaces:nth-of-type(2){ grid-area: enlace2; }
+    .div-enlaces:nth-of-type(3){ grid-area: enlace3; }
+    .div-ubicacion{
+        grid-area: ubicacion;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
     .div-footer-pie{
         flex-direction: column;
