@@ -844,17 +844,22 @@ section{
         font-size: 1.5rem;
     }
     .modal-servicio, .modal-infraestructura{
-        width: 350px;
+        width: 360px;
+    }
+    .modal-servicio h1, .modal-infraestructura h1{
+        letter-spacing: 0;
     }
     .div-descripcion-modal h2{
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+        letter-spacing: 0;
     }
     .modal-infraestructura h2{
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+        letter-spacing: 0;
     }
     .modal-infraestructura p{
         font-size: 1rem;
-        line-height: 1.2;
+        line-height: 1;
     }
 }
 /*-------------------------Seccion noticias-------------------------*/
