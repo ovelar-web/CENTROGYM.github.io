@@ -243,7 +243,7 @@ header{
     width: 500px;
     padding: 15px;
     border-radius: 20px;
-    margin: 40% auto;
+    margin: 50% auto;
     box-shadow: 0 0 20px rgb(211, 148, 77);
     position: relative;
     display: flex;
@@ -314,10 +314,10 @@ header{
 /*---------Responsive para boton llamada y boton ir arriba---------*/
 @media(max-width: 700px){
     .div-llamada{
-        width: 55px;
-        height: 50px;
+        width: 60px;
+        height: 55px;
         bottom: 8px;
-        right: 8px;
+        right: 10px;
     }
     .modal-llamada{
         width: 300px;
@@ -330,10 +330,10 @@ header{
         right: 15px;
     }
     .div-boton-arriba{
-        width: 35px;
-        height: 30px;
+        width: 40px;
+        height: 35px;
         bottom: 70px;
-        right: 18px;
+        right: 20px;
     }
 }
 /*--------------------------Seccion Inicio--------------------------*/
@@ -956,7 +956,7 @@ section{
 /*--Contenedor de boton del carrucel--*/
 .div-boton-carrucel{
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 0;
     right: 0;
     display: flex;
@@ -997,12 +997,16 @@ section{
     }
     .carrucel{
         width: 90%;
+        height: 255px;
     }
     .div-descripcion-galeria h2{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        letter-spacing: 0;
+        margin-top: 45%;
     }
     .div-descripcion-galeria p{
-        font-size: 2rem;
+        font-size: 1.6rem;
+        letter-spacing: 0;
     }
 }
 /*-------------------Seccion Preguntas frecuentes-------------------*/
@@ -1102,6 +1106,14 @@ details[open] summary::after{
     box-shadow: 0 0 5px rgb(0, 0, 0);
     width: 100%;
     height: 100%;
+}
+/*------------Responsive para preguntas y testimonios------------*/
+@media(max-width: 700px){
+    .div-preguntas-clientes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 /*-------------------------Seccion contacto-------------------------*/
 /*--Titulo--*/
