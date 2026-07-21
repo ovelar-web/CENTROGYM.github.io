@@ -243,7 +243,7 @@ header{
     width: 500px;
     padding: 15px;
     border-radius: 20px;
-    margin: 50% auto;
+    margin: 15% auto;
     box-shadow: 0 0 20px rgb(211, 148, 77);
     position: relative;
     display: flex;
@@ -321,6 +321,7 @@ header{
     }
     .modal-llamada{
         width: 300px;
+        margin: 60% auto;
     }
     .modal-llamada h2{
         font-size: 1.3rem;
@@ -379,7 +380,7 @@ header{
     color: rgb(211, 148, 77);
     text-shadow: 0 5px 1px black;
 }
-/*---------------------Responsive para Banner---------------------*/
+/*----------------Responsive para seccion inicio----------------*/
 @media(max-width: 700px){
     .div-imagen img{
         width: 125%;
@@ -487,7 +488,7 @@ section{
     object-fit: cover;
     display: block;
 }
-/*----------------Responsive para seccion nosotros----------------*/
+/*---------------Responsive para seccion nosotros---------------*/
 @media(max-width: 700px){
     .div-titulo-nosotros h2{
         font-size: 2rem;
@@ -1002,7 +1003,7 @@ section{
     .div-descripcion-galeria h2{
         font-size: 1.2rem;
         letter-spacing: 0;
-        margin-top: 45%;
+        margin-top: 50%;
     }
     .div-descripcion-galeria p{
         font-size: 1.4rem;
@@ -1107,7 +1108,7 @@ details[open] summary::after{
     width: 100%;
     height: 100%;
 }
-/*------------Responsive para preguntas y testimonios------------*/
+/*--------Responsive para seccion preguntas y testimonios--------*/
 @media(max-width: 700px){
     .div-preguntas-clientes{
         flex-direction: column;
@@ -1246,6 +1247,32 @@ input[type="submit"]{
 input[type="submit"]:hover{
     transform: scale(1.05);
     background-color: rgb(255, 181, 44);
+}
+/*---------------Responsive para seccion contacto---------------*/
+@media(max-width: 700px){
+    .div-titulo-contacto h2{
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+    .div-titulo-contacto p{
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    .div-mapa-contacto{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-mapa{
+        display: none;
+    }
+    .div-contacto{
+        width: 95%;
+        padding-left: 0;
+    }
+    .nombreUsuario, .apellidoUsuario, .telefonoUsuario, .correoUsuario, .titulo-combo, .mensajeUsuario{
+        letter-spacing: 0;
+    }
 }
 /*------------------------------Footer------------------------------*/
 /*--Estilo del footer--*/
