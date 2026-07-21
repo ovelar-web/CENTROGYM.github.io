@@ -141,7 +141,7 @@ header{
 .nav-modo img:hover{
     transform: scale(1.1);
 }
-/*----------------------Responsive para movil----------------------*/
+/*----------------------Responsive para header----------------------*/
 @media(max-width: 700px){
     header{
         flex-wrap: wrap;
@@ -151,7 +151,6 @@ header{
     }
     .nav-logo{
         order: 1;
-        background-color: red;
         width: 65px;
         height: 70px;
         margin-top: 5px;
@@ -168,7 +167,6 @@ header{
         order: 2;
         width: 40px;
         height: 40px;
-        background-color: red;
     }
     .nav-modo{
         order: 3;
@@ -176,15 +174,14 @@ header{
         height: 38px;
         margin-left: 5px;
         margin-right: 10px;
-        background-color: red;
     }
     .nav-enlaces{
         order: 4;
         width: 100%;
-        justify-content: space-evenly;
+        display: flex;
+        justify-content:center;
         flex-wrap: wrap;
-        gap: 0.7rem;
-        margin-bottom: 8px;
+        gap: 1rem;
     }
     .nav-enlaces a{
         font-size: 0.9rem;
@@ -246,7 +243,7 @@ header{
     width: 500px;
     padding: 15px;
     border-radius: 20px;
-    margin: 15% auto;
+    margin: 40% auto;
     box-shadow: 0 0 20px rgb(211, 148, 77);
     position: relative;
     display: flex;
@@ -857,10 +854,6 @@ section{
         font-size: 1.5rem;
         letter-spacing: 0;
     }
-    .modal-infraestructura p{
-        font-size: 1rem;
-        line-height: 1;
-    }
 }
 /*-------------------------Seccion noticias-------------------------*/
 /*--Titulo--*/
@@ -991,6 +984,10 @@ section{
 }
 .btn-derecha img:hover, .btn-izquierda img:hover{
     transform: scale(1.1);
+}
+/*---------------Responsive para seccion noticias---------------*/
+@media(max-width: 700px){
+
 }
 /*-------------------Seccion Preguntas frecuentes-------------------*/
 /*--Contenedor de preguntas y testimonios--*/
