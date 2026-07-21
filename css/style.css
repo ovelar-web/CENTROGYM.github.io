@@ -987,7 +987,23 @@ section{
 }
 /*---------------Responsive para seccion noticias---------------*/
 @media(max-width: 700px){
-
+    .div-titulo-novedades h2{
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+    .div-titulo-novedades p{
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    .carrucel{
+        width: 90%;
+    }
+    .div-descripcion-galeria h2{
+        font-size: 1.5rem;
+    }
+    .div-descripcion-galeria p{
+        font-size: 2rem;
+    }
 }
 /*-------------------Seccion Preguntas frecuentes-------------------*/
 /*--Contenedor de preguntas y testimonios--*/
