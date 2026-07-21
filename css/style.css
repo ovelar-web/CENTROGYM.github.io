@@ -838,6 +838,40 @@ section{
     .img-servicio{
         width: 40%;
     }
+    .div-descripcion-servicio p, .div-descripcion-infraestructura p{
+        font-size: 1rem;
+    }
+    .div-boton-servicio button{
+        padding: 10px 35px;
+    }
+    .titulo-infraestructura{
+        font-size: 1.5rem;
+    }
+    .modal-servicio, .modal-infraestructura{
+        width: 450px;
+    }
+    .modal-servicio h1, .modal-infraestructura h1{
+        font-size: 1.2rem;
+    }
+    .div-descripcion-modal h2{
+        font-size: 1.3rem;
+    }
+    .div-descripcion-modal p{
+        font-size: 0.8rem;
+        line-height: 2;
+    }
+    .div-boton-modal-servicio button{
+        font-size: 1rem;
+    }
+    .modal-infraestructura h2{
+        font-size: 1.3rem;
+    }
+    .modal-infraestructura p{
+        font-size: 0.8rem;
+    }
+    .div-boton-modal-infra button{
+        font-size: 1rem;
+    }
 }
 /*-------------------------Seccion noticias-------------------------*/
 /*--Titulo--*/
