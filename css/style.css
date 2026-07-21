@@ -475,7 +475,7 @@ header{
         margin-top: 1.5rem;
     }
 }
-@media(max-width: 500px){
+@media(max-width: 600px){
     .div-imagen img{
         padding-left: 28px;
     }
@@ -624,7 +624,7 @@ section{
         font-size: 1rem;
     }
 }
-@media(max-width: 500px){
+@media(max-width: 600px){
     .div-titulo-nosotros h2{
         font-size: 2rem;
         letter-spacing: 1px;
@@ -964,7 +964,7 @@ section{
         width: 40%;
     }
 }
-@media(max-width: 500px){
+@media(max-width: 600px){
     .div-texto-servicios h2{
         font-size: 2rem;
         letter-spacing: 1px;
@@ -1162,7 +1162,7 @@ section{
         margin-top: 45%;
     }
 }
-@media(max-width: 500px){
+@media(max-width: 600px){
     .div-titulo-novedades h2{
         font-size: 2rem;
         letter-spacing: 1px;
@@ -1317,7 +1317,7 @@ details[open] summary::after{
         padding: 0 0.5rem;
     }
 }
-@media(max-width: 500px){
+@media(max-width: 600px){
     .div-preguntas{
         width: 95%;
         padding-left: 0;
@@ -1480,7 +1480,7 @@ input[type="submit"]:hover{
         align-items: center;
     }
 }
-@media(max-width: 500px){
+@media(max-width: 600px){
     .div-titulo-contacto h2{
         font-size: 2rem;
         letter-spacing: 1px;
@@ -1680,9 +1680,123 @@ hr{
         gap: 1rem;
     }
 }
-@media(max-width: 500px){
+@media(max-width: 600px){
     .div-footer{
         padding-left: 1rem;
+    }
+}
+/*---------------------Politicas de privacidad---------------------*/
+.div-texto-politica{
+    margin: 5rem 5rem 3rem 5rem;
+}
+.div-texto-politica h2{
+    font-size: 2rem;
+    font: 600;
+    margin-bottom: 2rem;
+}
+.div-texto-politica p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.div-politicas{
+    margin-left: 5rem;
+}
+.div-politicas ul{
+    line-height: 3;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.div-politicas ul span{
+    font-weight: 800;
+}
+.div-boton-politica{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.div-boton-politica a{
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(20, 28, 44);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 550;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.div-boton-politica a:hover{
+    background: rgb(0, 0, 0);
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+/*---------------------Terminos y condiciones---------------------*/
+.div-texto-terminos{
+    margin: 5rem 5rem 3rem 5rem;
+}
+.div-texto-terminos h2{
+    font-size: 2rem;
+    font: 600;
+    margin-bottom: 2rem;
+}
+.div-texto-terminos p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.div-terminos{
+    margin-left: 5rem;
+}
+.div-terminos ul{
+    line-height: 3;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.div-terminos ul span{
+    font-weight: 800;
+}
+.div-boton-terminos{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.div-boton-terminos a{
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(20, 28, 44);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 550;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.div-boton-terminos a:hover{
+    background: rgb(0, 0, 0);
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+/*--------------Responsive para politicas y terminos--------------*/
+@media(max-width: 600px){
+    .div-texto-politica, .div-texto-terminos{
+        margin-top: 5rem;
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .div-texto-politica h2, .div-texto-terminos h2{
+        font-size: 1.5rem;
+    }
+    .div-texto-politica p, .div-texto-terminos p{
+        font-size: 0.8rem;
+    }
+    .div-politicas, .div-terminos{
+        margin-left: 0;
+        padding-right: 2rem;
+    }
+    .div-politicas ul, .div-terminos ul{
+        line-height: 2;
+        font-size: 1rem;
     }
 }
 
@@ -1776,4 +1890,24 @@ body.dark .div-footer-pie{
 }
 body.dark .footer-pie-links a:hover{
     color: rgb(255, 255, 255);
+}
+body.dark{
+    background: rgb(20, 28, 44);
+    color: rgb(255, 255, 255);
+}
+body.dark .div-boton-politica a{
+    color: rgb(20, 28, 44);
+    background-color: rgb(210, 210, 210);
+}
+body.dark .div-boton-politica a:hover{
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+body.dark .div-boton-terminos a{
+    color: rgb(20, 28, 44);
+    background-color: rgb(210, 210, 210);
+}
+body.dark .div-boton-terminos a:hover{
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
 }
