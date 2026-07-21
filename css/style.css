@@ -324,7 +324,6 @@ header{
     }
     .modal-llamada{
         width: 300px;
-        margin: 30% auto;
     }
     .modal-llamada h2{
         font-size: 1.3rem;
@@ -835,9 +834,6 @@ section{
     .div-servicio{
         width: 45%;
     }
-    .img-servicio{
-        width: 40%;
-    }
     .div-descripcion-servicio p, .div-descripcion-infraestructura p{
         font-size: 1rem;
     }
@@ -848,29 +844,30 @@ section{
         font-size: 1.5rem;
     }
     .modal-servicio, .modal-infraestructura{
-        width: 450px;
+        width: 400px;
     }
     .modal-servicio h1, .modal-infraestructura h1{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .div-descripcion-modal h2{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
     .div-descripcion-modal p{
-        font-size: 0.8rem;
+        font-size: 1rem;
         line-height: 2;
     }
     .div-boton-modal-servicio button{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .modal-infraestructura h2{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
     .modal-infraestructura p{
-        font-size: 0.8rem;
+        font-size: 1rem;
+        line-height: 1;
     }
     .div-boton-modal-infra button{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 /*-------------------------Seccion noticias-------------------------*/
