@@ -1273,6 +1273,21 @@ input[type="submit"]:hover{
     .nombreUsuario, .apellidoUsuario, .telefonoUsuario, .correoUsuario, .titulo-combo, .mensajeUsuario{
         letter-spacing: 0;
     }
+    .nombre input, .apellido input, .telefono input, .correo input{
+        width: 85%;
+    }
+    .opciones-combo{
+        width: 70%;
+    }
+    .mensaje textarea{
+        width: 85%;
+    }
+    .enviar{
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 /*------------------------------Footer------------------------------*/
 /*--Estilo del footer--*/
@@ -1349,6 +1364,7 @@ hr{
     display: flex;
     justify-content: center;
     padding-top: 2rem;
+    padding-bottom: 2rem;
     font-size: 0.9rem;
     font-weight: 600;
     color: rgb(20, 28, 44);
@@ -1368,6 +1384,22 @@ hr{
 }
 .footer-pie-links a:hover{
     color: rgb(20, 28, 44);
+}
+/*--------------------Responsive para footer--------------------*/
+@media(max-width: 700px){
+    footer{
+        padding: 5px;
+    }
+    .div-footer{
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .div-footer-pie{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
 }
 
 
